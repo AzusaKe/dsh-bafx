@@ -4,6 +4,7 @@
 > Blue Archive style click effect and cursor trail for DeepSeek Harness.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/dsh-bafx.svg)](https://www.npmjs.com/package/dsh-bafx)
 [![Powered by ba-click-fx](https://img.shields.io/badge/powered%20by-ba--click--fx-4ca7ff)](https://github.com/CialloKing/ba-click-fx)
 
 点击鼠标出现溶解圆环、中心光盘与碎片飞散；移动鼠标留下青蓝色光标拖尾。控制项集中在左侧边栏入口打开的**设置对话框**里，设置自动保存；特效库与全部依赖都随包分发，**零网络请求、零构建步骤**。
@@ -38,7 +39,7 @@ DSH 生态里已有其他点击特效插件（例如 [`dsh-ba-click-fx`](https:/
 
 ## 安装
 
-`dsh-bafx` 是一个 **bundle 插件**：包内 `cordis.patch.yml` 声明挂载行，`dsh.bundle.patch` 让插件管理命令自动把它加入 `dsh.profile.bundles`。
+`dsh-bafx` 是一个 **bundle 插件**：包内 `cordis.patch.yml` 声明挂载行，`dsh.bundle.patch` 让插件管理命令自动把它加入 `dsh.profile.bundles`。已发布到 npm（[`dsh-bafx`](https://www.npmjs.com/package/dsh-bafx)），下面的命令会直接安装该包。
 
 ### 桌面端（desktop profile）
 
@@ -55,9 +56,13 @@ DSH 生态里已有其他点击特效插件（例如 [`dsh-ba-click-fx`](https:/
 dsh plugin --profile web add dsh-bafx
 ```
 
-### 从源码 / 本地目录安装
+### 其他安装方式（GitHub / 本地目录）
 
 ```bash
+# 跟随仓库最新代码（desktop 档案把 dsh 换成桌面端自有 CLI 即可）
+dsh plugin --profile web add github:AzusaKe/dsh-bafx
+
+# 本地克隆 / 开发态（改代码即时生效）
 git clone https://github.com/AzusaKe/dsh-bafx.git
 dsh plugin --profile web add ./dsh-bafx          # 或 add link:<绝对路径>
 ```

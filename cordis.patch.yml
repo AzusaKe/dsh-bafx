@@ -1,0 +1,7 @@
+# dsh-bafx —— DSH bundle patch
+# 挂载声明：DSH 启动时按 bundle 层栈叠加各插件 patch，
+# 本文件把 ba-click-fx 特效插件插入 Web profile 的配置树。
+# 安装方式：dsh plugin --profile web add link:F:\codex-cache\dsh-bafx
+- insert:
+    - id: dsh-bafx
+      name: dsh-bafx

@@ -1,0 +1,61 @@
+{
+  "name": "dsh-bafx",
+  "version": "2.2.1",
+  "description": "Blue Archive (蔚蓝档案) click effect and cursor trail for DeepSeek Harness — vertical sidebar entry opening a settings dialog. Powered by ba-click-fx.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "author": "AzusaKe",
+  "homepage": "https://github.com/AzusaKe/dsh-bafx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzusaKe/dsh-bafx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AzusaKe/dsh-bafx/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "ba-click-fx",
+    "click-effect",
+    "mouse-effect",
+    "cursor-trail",
+    "blue-archive",
+    "蔚蓝档案",
+    "点击特效",
+    "光标拖尾"
+  ],
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "test": "node test-host.mjs && node test-client.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

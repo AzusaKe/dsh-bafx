@@ -1,0 +1,5 @@
+# Normalize line endings: store LF in the repository (Windows-friendly either way).
+* text=auto eol=lf
+
+# Vendored verbatim sources: never rewrite these.
+lib/bafx-src/** -text
